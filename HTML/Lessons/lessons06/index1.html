@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleverlend</title>
+    <style>
+        h1 {
+            color: #6E76F1;
+            font-size: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">
+        Cleverlend
+    </h1>
+    <h2>
+        Формы. Элементы форм
+    </h2>
+    <form name="user-form">
+        <fieldset>
+        <legend>Данные пользователя</legend>
+        <p>Логин:
+            <input type="text" name="user" placeholder="Login">
+        </p>
+        <p>
+            Пароль:
+            <input type="password" name="password" placeholder="Password">
+        </p>
+        <p>
+            <input type="submit" value="Вход">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Пожелания</legend>
+        <p>
+            <select name="city" >
+                <option disabled>Выберите город</option>
+                <option value="Minsk">Минск</option>
+                <option value="Orsha">Орша</option>
+                <option value="Mogilev">Могилев</option>
+                <option value="Vitebsk">Витебск</option>
+                <option value="Moskva">Москва</option>
+            </select>
+        </p>
+        <p>
+            <select multiple name="dreams">
+                <option disabled>Выберете что бы вы хотели иметь</option>
+                <option value="car">Машина</option>
+                <option value="house">Дом</option>
+                <option value="flat">Квартира</option>
+                <option value="PC">Комп</option>
+                <option value="children">Дети</option>
+                <option value="while">Жена</option>
+            </select>
+        </p>
+        <p>
+            <label for="tt">Просите желания</label>
+            <input id="tt" type="text">
+        </p>
+        <p>
+            <label><input type="checkbox" name="111" value="Znak">Текс</label>
+        </p>
+        <p>
+            <textarea name="text" cols="30" rows="10" placeholder="Пишите"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="GO">
+        </p>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
