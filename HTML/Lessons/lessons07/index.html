@@ -3,18 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Регистрационная форма</title>
+    
+     
 </head>
 <body>
-    <input type="text" size="30" placeholder="Ваше Имя">
-<input type="password" size="8">
-<input type="checkbox" checked="checked">
-<input type="radio" name="radio">
-<input type="hidden" value="скрытое поле">
-<input type="file">
-<input type="submit" value="Сохранить">
-<input type="reset" value="Очистить">
-<input type="button" value="просто кнопка">
+    <form>
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+            <p>
+                Имя:<input type="text" name="name">
+            </p>
+            <p>
+                Укажите возраст:<input name="old" list="old" >
+                <datalist id="old">
+                    <option value="10-15 лет"></option>
+                    <option value="15-20 лет"></option>
+                    <option value="20-30 лет"></option>
+                    <option value="30-40 лет"></option>
+                    <option value="Старше 40 лет"></option>
+                </datalist>
+            </p>
+            <p>
+                Укажите пол: 
+                <label>Мужской<input name="sex" type="radio" value="Мужской"></label> 
+                <label>Женский<input name="sex" type="radio" value="Женский"></label>
+            </p>
+            <p>
+                Страна проживания:
+                <input name="country" list="country">
+                <datalist id="country">
+                    <option value="Республика Беларусь"></option>
+                    <option value="Российская Федерация"></option>
+                    <option value="Другая страна"></option>
+                </datalist>
+            </p>
+            <p>
+                Владение языками: 
+                <label>русский<input type="checkbox" name="yzik" value="Русский"></label>
+                <label>белорусский<input type="checkbox" name="yzik" value="Белорусский"></label>
+                <label>английский<input type="checkbox" name="yzik" value="Английский"></label>
+            </p>
+            <p>
+                Фото профиля: 
+                <input type="file">
+            </p>
+            <p>
+                Введите логин:
+                <input type="text" name="login">
+            </p>
+            <p>
+                Введите пароль:
+                <input type="password" name="password">
+            </p>
+            <p>
+                Повторите пароль:
+                <input type="password" name="recpassword">
+            </p>
 
+        </fieldset>
+        <input type="reset">
+        <input type="submit">
+        
+    </form>
 </body>
 </html>
