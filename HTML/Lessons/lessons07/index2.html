@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Параметры автомобиля</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Параметры автомобиля</legend>
+            <p>
+                <label>Марка автомобиля <input type="text" name="marka"></label>
+            </p>
+            <p>
+                <label>Объем двигателя, см<sup>3</sup><input type="text" name="V" placeholder="1900"></label>
+            </p>
+            <p>
+                Область:<input name="oblast" list="obl">
+                <datalist id="obl">
+                    <option value="Брестская"></option>
+                    <option value="Витебская"></option>
+                    <option value="Минская"></option>
+                </datalist>
+            </p>
+            <p>
+                Тип КПП
+            </p>
+            <p>
+                <label><input type="radio" name="KPP" value="AVTO">Автомат</label>
+            </p>
+            <p>
+                <label><input type="radio" name="KPP" value="MEX">Механика</label>
+            </p>
+            <p>
+                Двигатель
+            </p>
+            <p>
+                <label><input type="checkbox" name="dvig" value="elex">Электро</label>
+            </p>
+            <p>
+                <label><input type="checkbox" name="dvig" value="diz">Дизель</label>
+            </p>
+            <p>
+                <label><input type="checkbox" name="dvig" value="benz">Бензин</label>
+            </p>
+            <p>
+                <label><input type="checkbox" name="dvig" value="prop">Пропан-бутан</label>
+            </p>
+            <p>
+                <label><input type="checkbox" name="dvig" value="met">Метан</label>
+            </p>
+            <p>
+                <label for="opis">Описание:</label>
+            </p>
+            <p>
+               <textarea name="opis" id="opis" rows="10" cols="30"></textarea> 
+            </p>
+            <p>
+                <input type="submit">
+                <input type="reset">
+            </p>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
